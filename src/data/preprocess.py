@@ -2,7 +2,6 @@ import torch
 import torchvision
 from torch.utils.data import TensorDataset
 
-# testing
 import os
 import argparse
 import wandb
@@ -34,7 +33,7 @@ def preprocess(dataset, normalize=True, expand_dims=True):
 
 def preprocess_and_log(steps):
 
-    with wandb.init(project="MLOps-Pycon2023", name=f"Preprocess Data ExecId-{args.IdExecution}", job_type="preprocess-data") as run:    
+    with wandb.init(project="Expe_analitica1", name=f"Preprocess Data ExecId-{args.IdExecution}", job_type="preprocess-data") as run:    
         processed_data = wandb.Artifact(
             "olivetti-faces-preprocess", type="dataset",
             description="Preprocessed Olivetti Faces dataset",
