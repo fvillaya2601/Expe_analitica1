@@ -11,7 +11,7 @@ args = parser.parse_args()
 if args.IdExecution:
     print(f"IdExecution: {args.IdExecution}")
 
-def load(train_size=.8):
+def load(train_size=.8): 
     """
     Load the Olivetti Faces data
     """
