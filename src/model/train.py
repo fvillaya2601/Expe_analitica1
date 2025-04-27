@@ -154,7 +154,7 @@ def train_and_log(config,experiment_id='99'):
         name=f"Train Model ExecId-{args.IdExecution} ExperimentId-{experiment_id}", 
         job_type="train-model", config=config) as run:
         config = wandb.config
-        data = run.use_artifact('mnist-preprocess:latest')
+        data = run.use_artifact('olivetti-faces-preprocess:latest')
         data_dir = data.download()
 
         training_dataset =  read(data_dir, "training")
