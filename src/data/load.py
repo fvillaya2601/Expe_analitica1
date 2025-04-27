@@ -2,7 +2,7 @@ import torch
 from torch.utils.data import TensorDataset
 import argparse
 import wandb
-from sklearn.datasets import fetch_olivetti_faces  # 🔵 nuevo import
+from sklearn.datasets import fetch_olivetti_faces
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--IdExecution', type=str, help='ID of the execution')
